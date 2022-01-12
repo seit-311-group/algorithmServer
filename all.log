@@ -1,0 +1,48 @@
+2021-12-24 11:08:21,863 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:08:21,863 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:15] - INFO: Host: 172.19.48.139:5000
+Connection: keep-alive
+Content-Length: 47
+Postman-Token: 5f8f2fd9-b702-9796-0aa1-0dd76fc7aa26
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+2021-12-24 11:10:45,893 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:11:10,944 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:11:47,785 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:14,213 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:15,509 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:16,194 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:16,878 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:17,289 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:17,461 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:17,901 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:18,078 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:18,257 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:19,258 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:12:45,241 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:13:19,083 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:15:44,191 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:20:47,677 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能：
+2021-12-24 11:20:47,685 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:23] - ERROR: 0.6
+2021-12-24 11:22:54,430 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:22:54,439 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:23] - ERROR: 0.6
+2021-12-24 11:23:45,198 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:23:45,206 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:23] - ERROR: 0.6
+2021-12-24 11:24:51,347 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:24:51,356 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:24] - ERROR: 0.6
+2021-12-24 11:26:11,687 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:26:11,695 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:23] - ERROR: '0.6'
+2021-12-24 11:27:03,472 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:28:07,889 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:29:42,007 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:46:17,538 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:46:41,457 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:46:57,579 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-24 11:47:06,349 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
+2021-12-25 10:36:32,843 - F:\Graduation\graduationDesign\algorithmServer\server.py[line:14] - INFO: 调用方程匹配功能
