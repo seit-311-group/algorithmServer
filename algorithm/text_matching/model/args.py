@@ -5,8 +5,6 @@ max_word_len = 20
 word_embedding_len = 100
 char_embedding_size = 100
 
-bert_emdedding_size = 768
-
 embedding_hidden_size = 512
 
 context_hidden_size = 256

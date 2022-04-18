@@ -3,7 +3,7 @@ import sys
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
 
-from algorithm import Graph
+from algorithm.text_matching.model.graph import Graph
 import tensorflow as tf
 from algorithm.text_matching.utils.load_data import load_char_word_static_data2
 from algorithm.text_matching.utils.evaluate import cal_precision_recall_F1

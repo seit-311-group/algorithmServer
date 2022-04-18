@@ -12,10 +12,6 @@ class Graph:
                                     dtype=tf.float32)
         self.h_vec = tf.placeholder(name='h_word', shape=(None, args.seq_length, args.char_embedding_size),
                                     dtype=tf.float32)
-        self.p_bert_vec = tf.placeholder(name='p_bert_word', shape=(None, args.seq_length, args.bert_emdedding_size),
-                                    dtype=tf.float32)
-        self.h_bert_vec = tf.placeholder(name='h_bert_word', shape=(None, args.seq_length, args.bert_emdedding_size),
-                                    dtype=tf.float32)
         self.keep_prob = tf.placeholder(dtype=tf.float32, name='drop_rate')
 
         self.embedding = tf.get_variable(dtype=tf.float32, shape=(args.vocab_size, args.char_embedding_size),

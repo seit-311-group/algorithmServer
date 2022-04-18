@@ -19,7 +19,7 @@ saver = tf.train.Saver()
 sess = tf.compat.v1.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
-saver.restore(sess, './algorithm/text_matching/output/model/model_48.ckpt')
+saver.restore(sess, './algorithm/text_matching/output/model/model_47.ckpt')
 
 @app.route('/functionMatch', methods=['POST'])
 def match_function():
