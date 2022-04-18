@@ -1,13 +1,25 @@
 from flask import Flask, request, Response
 import json
 import time
-from algorithm.function.functionMatch import match_fun
+from algorithm.function_matching.functionMatch import match_fun
+from algorithm.text_matching.model.graph import Graph
+import tensorflow as tf
 from log import Logger
+from algorithm.text_matching.utils.load_data import load_char_word_static_list_predict
+import numpy as np
 
 app = Flask("algorithm", static_folder="/static", template_folder="templates")
 
-logging = Logger('all.log',level='debug')
+logging = Logger('all.log', level='debug')
+config = tf.compat.v1.ConfigProto()
+config.gpu_options.allow_growth = True
 
+model = Graph()
+saver = tf.train.Saver()
+sess = tf.compat.v1.Session(config=config)
+
+sess.run(tf.global_variables_initializer())
+saver.restore(sess, './algorithm/text_matching/output/model/model_48.ckpt')
 
 @app.route('/functionMatch', methods=['POST'])
 def match_function():
@@ -23,6 +35,25 @@ def match_function():
         return Response(json.dumps("错误"), mimetype='application/json')
     t2 = time.time()
     print("用时：" + str(round(t2 - t1, 3)))
+    return Response(json.dumps(res), mimetype='application/json')
+
+@app.route('/textMatch', methods=['POST'])
+def match_text():
+    logging.logger.info('调用文本匹配功能')
+    question = request.json['question']
+    candidate = request.json['candidate']
+    p_index, h_index, p_vec, h_vec, label = load_char_word_static_list_predict(question, candidate)
+    similarity = sess.run(model.similarity,
+                                           feed_dict={model.p: p_index,
+                                                      model.h: h_index,
+                                                      model.p_vec: p_vec,
+                                                      model.h_vec: h_vec,
+                                                      model.y: label,
+                                                      model.keep_prob: 1})
+    res = {}
+    for i in range(len(candidate)):
+        res[candidate[i]] = np.float(similarity[0][i][1])
+
     return Response(json.dumps(res), mimetype='application/json')
 
 
