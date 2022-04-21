@@ -42,17 +42,21 @@ def match_text():
     logging.logger.info('调用文本匹配功能')
     question = request.json['question']     # 字符串
     candidate = request.json['candidate']   # list
-    p_index, h_index, p_vec, h_vec, label = load_char_word_static_list_predict(question, candidate)
-    similarity = sess.run(model.similarity,
-                                           feed_dict={model.p: p_index,
-                                                      model.h: h_index,
-                                                      model.p_vec: p_vec,
-                                                      model.h_vec: h_vec,
-                                                      model.y: label,
-                                                      model.keep_prob: 1})
-    res = {}
-    for i in range(len(candidate)):
-        res[candidate[i]] = np.float(similarity[0][i][1])
+    try:
+        p_index, h_index, p_vec, h_vec, label = load_char_word_static_list_predict(question, candidate)
+        similarity = sess.run(model.similarity,
+                                               feed_dict={model.p: p_index,
+                                                          model.h: h_index,
+                                                          model.p_vec: p_vec,
+                                                          model.h_vec: h_vec,
+                                                          model.y: label,
+                                                          model.keep_prob: 1})
+        res = {}
+        for i in range(len(candidate)):
+            res[candidate[i]] = np.float(similarity[0][i][1])
+    except Exception as e:
+        logging.logger.error(e)
+        return Response(json.dumps("错误"), mimetype='application/json')
 
     return Response(json.dumps(res), mimetype='application/json')
 
