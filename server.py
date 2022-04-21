@@ -19,7 +19,7 @@ saver = tf.train.Saver()
 sess = tf.compat.v1.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
-saver.restore(sess, './algorithm/text_matching/output/model/model_47.ckpt')
+saver.restore(sess, './algorithm/text_matching/output/model/model_0.ckpt')
 
 @app.route('/functionMatch', methods=['POST'])
 def match_function():
@@ -40,8 +40,8 @@ def match_function():
 @app.route('/textMatch', methods=['POST'])
 def match_text():
     logging.logger.info('调用文本匹配功能')
-    question = request.json['question']
-    candidate = request.json['candidate']
+    question = request.json['question']     # 字符串
+    candidate = request.json['candidate']   # list
     p_index, h_index, p_vec, h_vec, label = load_char_word_static_list_predict(question, candidate)
     similarity = sess.run(model.similarity,
                                            feed_dict={model.p: p_index,
