@@ -19,7 +19,7 @@ saver = tf.train.Saver()
 sess = tf.compat.v1.Session(config=config)
 
 sess.run(tf.global_variables_initializer())
-saver.restore(sess, './algorithm/text_matching/output/model/model_0.ckpt')
+saver.restore(sess, './algorithm/text_matching/output/model/model_49.ckpt')
 
 @app.route('/functionMatch', methods=['POST'])
 def match_function():
@@ -53,7 +53,7 @@ def match_text():
                                                           model.keep_prob: 1})
         res = {}
         for i in range(len(candidate)):
-            res[candidate[i]] = np.float(similarity[0][i][1])
+            res[candidate[i]] = round(np.float(similarity[0][i][1]), 4) # 取小数点前四位
     except Exception as e:
         logging.logger.error(e)
         return Response(json.dumps("错误"), mimetype='application/json')
